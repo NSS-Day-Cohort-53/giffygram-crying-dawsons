@@ -1,3 +1,28 @@
 {
-  "users": []
+  "users": [
+    "id": ,
+    "name": ,
+    "email": , 
+    "password": 
+  ],
+  "messages": [
+    "userId": ,
+    "recipientId": ,
+    "text": ,
+    "read": ,
+    "id":
+  ],
+  "posts": [
+    "id": ,
+    "userId" ,
+    "title": ,
+    "imageURL": ,
+    "description": ,
+    "timestamp": 
+  ],
+  "likes": [
+    "id": ,
+    "userId": ,
+    "postId": 
+  ]
 }
