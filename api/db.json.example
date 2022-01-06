@@ -26,3 +26,19 @@
     "postId": 
   ]
 }
+
+{
+    "users": [{
+      "id": 1,
+      "name": "Bryce",
+      "email": "bryce@class.com", 
+      "password": "12345"
+    },
+    {
+      "id": 2,
+      "name": "Jim",
+      "email": "jim@class.com", 
+      "password": "12345"
+    }]
+}
+  
