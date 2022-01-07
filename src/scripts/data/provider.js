@@ -66,6 +66,27 @@ const applicationState = {
       return applicationState.messages.map((message) => ({...message}));
   };
   
-  export const getCurrentUser = () => {
-      return applicationState.currentUser
-  }
+  export const getChosenUser = () => {
+    return applicationState.feed.chosenUser;
+};
+
+export const setChosenUser = (chosenUserId) => {
+  applicationState.feed.chosenUser = chosenUserId;
+};
+
+export const getCurrentUser = () => {
+  return applicationState.currentUser;
+};
+
+export const setCurrentUser = (userObject) => {
+  applicationState.currentUser = userObject;
+};
+
+export const displayPostCreateFalse = () => {
+  applicationState.feed.displayPostCreate = false;
+};
+
+export const displayPostCreateTrue = () => {
+  applicationState.feed.displayPostCreate = true;
+};
+  
