@@ -1,8 +1,13 @@
+import { counterDisplayElem } from "./message/MessageForm.js"
+import { MessageForm } from "./message/MessageForm.js"
+
+
 export const GiffyGram = () => {
 
     // Show main main UI
-    return `<h1>Giffygram</h1>`
-    `${counterDisplayElem()}`
+    return `<h1>Giffygram</h1>
+    ${counterDisplayElem()}
+    ${MessageForm()}`
 }
 
 
