@@ -9,7 +9,8 @@ const applicationState = {
       displayMessages: false,
             displayNavBar: true,    
             displayMessageCreate: false,    
-            displayPostCreate: false
+            displayPostCreate: false,
+            selectYear: 0
     },
     users: [],
     posts: [],
@@ -88,3 +89,4 @@ export const displayPostCreateFalse = () => {
 export const displayPostCreateTrue = () => {
   applicationState.feed.displayPostCreate = true;
 };
+  
