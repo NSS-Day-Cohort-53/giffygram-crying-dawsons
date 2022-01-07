@@ -1,11 +1,12 @@
 import { GiffyGram } from "./GiffyGram.js";
 import { LoginForm } from "./auth/Login.js";
+import { fetchMessages } from "./data/provider.js";
 import { fetchPosts, fetchUsers, getUsers, setCurrentUser } from "./data/provider.js";
 
 const applicationElement = document.querySelector(".giffygram");
 
 export const renderApp = () => {
-  Promise.all([fetchUsers(), fetchPosts()]).then(() => {
+  Promise.all([fetchUsers(), fetchMessages(),  fetchPosts()]).then(() => {
     const user = parseInt(localStorage.getItem("gg_user"));
 
     if (user) {
@@ -23,3 +24,4 @@ document.addEventListener("stateChanged", (event) => {
 });
 
 renderApp();
+
