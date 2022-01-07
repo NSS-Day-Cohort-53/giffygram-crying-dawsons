@@ -1,4 +1,5 @@
 import { getMessages , getCurrentUser } from "../data/provider.js"
+import { renderApp } from "../main.js";
 
 const applicationElement = document.querySelector(".giffygram")
 
@@ -28,4 +29,15 @@ export const Navbar = () => {
         </nav>
     `
 };
+
+applicationElement.addEventListener("click", (event) => {
+    if (event.target.id === "logout") {
+        localStorage.removeItem("gg_user");
+        applicationElement.dispatchEvent(new CustomEvent("stateChanged"))
+    } else if (event.target.id === "logo") {
+        document.location.reload(true)
+        renderApp()
+        applicationElement.dispatchEvent(new CustomEvent("stateChanged"))
+    } 
+});
 
