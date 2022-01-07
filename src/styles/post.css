@@ -72,3 +72,28 @@
     font-size: 2em;
     margin: 1em 0 0.5em 0;
 }
+
+
+#postclosebutton {
+    
+    top: 0.25rem;
+    right: 0.35rem;
+    width: 2rem;
+    height: 2rem;
+    line-height: 0;
+}
+
+#postUrlEntry {
+    width: 30rem;
+    margin: 0.5rem 0;
+}
+
+#postComment {
+    width: 100%;
+    height: 5em;
+}
+
+#postTitle {
+    width: 100%;
+    height: 1em;
+}

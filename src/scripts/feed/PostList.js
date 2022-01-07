@@ -1,4 +1,6 @@
-import { getPosts, 
+import { 
+    fetchPosts,
+    getPosts, 
     getChosenUser,
     displayPostCreateTrue
 } from "../data/provider.js";
@@ -9,14 +11,12 @@ const applicationElement = document.querySelector(".giffygram");
 applicationElement.addEventListener("click", (event) => {
     if (event.target.id === "postButton") {
         document.querySelector(".postCreate").style.visibility = "visible";
+        document.querySelector(".postButton").style.visibility = "hidden"
         displayPostCreateTrue();
     }
 });
 
-applicationElement.addEventListener("postListUpdate", () => {
-    fetchPosts()
-        .then(() => applicationElement.querySelector(".postList").innerHTML = PostList());
-});
+
 
 export const PostList = () => {
     let posts = getPosts();
