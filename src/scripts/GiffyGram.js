@@ -1,23 +1,11 @@
 import { counterDisplayElem } from "./message/MessageForm.js"
 import { MessageForm } from "./message/MessageForm.js"
 
-import { Navbar } from "./nav/NavBar.js"
-
-export const GiffyGram = () => {
-
-    // Show main main UI
-    return `<h1>Giffygram</h1>
-    ${counterDisplayElem()}
-    ${MessageForm()}
-    ${Navbar()}
-    `
-
-}
 
 import { PostList } from "./feed/PostList.js";
 import { Footer } from "./nav/Footer.js";
 import { postCreate } from "./feed/PostForm.js";
-import { Navbar } from "./nav/NavBar.js"
+import { Navbar } from "./nav/NavBar.js";
 
 
 export const GiffyGram = () => {
@@ -35,7 +23,8 @@ export const GiffyGram = () => {
             ${PostList()}
         </section>
         <section class="messagesWindow">
-        
+        ${counterDisplayElem()}
+        ${MessageForm()}
         </section>
     </article>
         <footer class="footer">

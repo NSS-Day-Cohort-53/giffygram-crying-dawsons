@@ -1,6 +1,6 @@
 import { GiffyGram } from "./GiffyGram.js";
 import { LoginForm } from "./auth/Login.js";
-import { fetchMessages, fetchUsers } from "./data/provider.js";
+import { fetchMessages } from "./data/provider.js";
 import { fetchPosts, fetchUsers, getUsers, setCurrentUser } from "./data/provider.js";
 
 const applicationElement = document.querySelector(".giffygram");

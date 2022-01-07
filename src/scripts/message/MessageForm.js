@@ -22,12 +22,11 @@ export const MessageForm = () => {
                       <label for=""recipientId""> To:</label>
                       <input type="recipientId" name="recipientId" placeholder="RecipientID" />
                   </fieldset>
-                    <fieldset>
-                  <textarea class= "messages">
+            
 
-
-                  </textarea>
-                  </fieldset>
+                  <textarea name="messages" id="message" placeholder="Message:"></textarea>
+                  
+            
               </form>
               <button id="send"> Send </button>
           </div>
