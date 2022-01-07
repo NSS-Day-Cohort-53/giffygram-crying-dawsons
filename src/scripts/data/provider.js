@@ -11,6 +11,7 @@ const applicationState = {
             displayMessageCreate: false,    
             displayPostCreate: false,
             selectYear: 0
+            
     },
     users: [],
     posts: [],

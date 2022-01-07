@@ -29,3 +29,10 @@ export const Navbar = () => {
     `
 };
 
+applicationElement.addEventListener("click", (event) => {
+    if (event.target.id === "logout") {
+        localStorage.removeItem("gg_user");
+        applicationElement.dispatchEvent(new CustomEvent("stateChanged"))
+    } 
+})
+
