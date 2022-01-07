@@ -6,14 +6,15 @@ import { Navbar } from "./nav/NavBar.js"
 
 export const GiffyGram = () => {
   // Show main main UI
-  return `<h1>Giffygram</h1>
-    <article class="frontPage">
-        <section class="postCreate">
+  return `
+    <article class="frontPage"><br><br><br>
+        <section class="postCreate" style="visibility: hidden">
             ${postCreate()}
         </section>
         <section class="navBar">
             ${Navbar()}
         </section>
+        
         <section class="postsWindow"
             ${PostList()}
         </section>
