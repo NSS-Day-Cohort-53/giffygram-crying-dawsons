@@ -9,7 +9,8 @@ const applicationState = {
       displayMessages: false,
             displayNavBar: true,    
             displayMessageCreate: false,    
-            displayPostCreate: false
+            displayPostCreate: false,
+            selectYear: 0
     },
     users: [],
     posts: [],
@@ -65,3 +66,6 @@ const applicationState = {
       return applicationState.messages.map((message) => ({...message}));
   };
   
+  export const getCurrentUser = () => {
+      return applicationState.currentUser
+  }
