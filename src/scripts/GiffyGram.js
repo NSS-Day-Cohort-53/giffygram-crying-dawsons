@@ -1,7 +1,26 @@
+import { PostList } from "./feed/PostList.js";
+import { Footer } from "./nav/Footer.js";
+import { postCreate } from "./feed/PostForm.js";
+
 export const GiffyGram = () => {
-
-    // Show main main UI
-    return `<h1>Giffygram</h1>`
-}
-
-
+  // Show main main UI
+  return `<h1>Giffygram</h1>
+    <article class="frontPage">
+        <section class="postCreate">
+            ${postCreate()}
+        </section>
+        <section class="navBar">
+        
+        </section>
+        <section class="postsWindow"
+            ${PostList()}
+        </section>
+        <section class="messagesWindow">
+        
+        </section>
+    </article>
+        <footer class="footer">
+            ${Footer()}
+        </footer>
+    `;
+};
